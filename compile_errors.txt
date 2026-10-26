@@ -1,0 +1,246 @@
+﻿Configuration on demand is an incubating feature.
+> Task :deobfCompileDummyTask
+> Task :deobfProvidedDummyTask
+> Task :getVersionJson
+> Task :downloadClient SKIPPED
+> Task :extractDependencyATs SKIPPED
+> Task :extractMcpData SKIPPED
+> Task :extractMcpMappings SKIPPED
+> Task :genSrgs SKIPPED
+> Task :deobfMcMCP SKIPPED
+> Task :sourceApiJava UP-TO-DATE
+> Task :compileApiJava NO-SOURCE
+> Task :processApiResources NO-SOURCE
+> Task :apiClasses UP-TO-DATE
+> Task :sourceMainJava UP-TO-DATE
+
+> Task :compileJava
+Potential refmap conflict. Duplicate refmap name mixins.replaymod.refmap.json specified for sourceSet main, already defined for sourceSet main
+.\gradlew.bat : Note: SpongePowered MIXIN Annotation Processor Version=0.7.11
+At line:1 char:1
++ .\gradlew.bat compileJava 2>&1 | Out-File -FilePath 'compile_errors.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Note: SpongePow... Version=0.7.11:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Note: ObfuscationServiceMCP supports type: "searge"
+Note: ObfuscationServiceMCP supports type: "notch"
+Note: Loading searge mappings from 
+C:\Users\User\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_stable\22\srgs\mcp-srg.srg
+Note: Loading notch mappings from 
+C:\Users\User\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_stable\22\srgs\mcp-notch.srg
+Note: Writing refmap to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing refmap to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge output SRGs to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\mcp-srg.srg
+Note: Writing notch output SRGs to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\mcp-notch.srg
+Note: Writing refmap to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing refmap to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge output SRGs to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\mcp-srg.srg
+Note: Writing notch output SRGs to E:\MicroClient_NEW\ReplayMod_src\build\tmp\compileJava\mcp-notch.srg
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\core\SettingsRegistryBackend.java:47: error: 
+cannot find symbol
+               property.setValidValues(choices.toArray(new String[0]));
+                       ^
+  symbol:   method setValidValues(String[])
+  location: variable property of type Property
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\lib\de\johni0702\minecraft\gui\layout\CustomLayo
+ut.java:31: error: incompatible types: Object cannot be converted to GuiElement
+         for (GuiElement element : container.getChildren()) {
+                                                        ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\lib\de\johni0702\minecraft\gui\layout\CustomLayo
+ut.java:44: error: incompatible types: Map<GuiElement,Pair<Point,Dimension>> cannot be converted to 
+Map<GuiElement,Pair<ReadablePoint,ReadableDimension>>
+      return this.result;
+                 ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\core\gui\GuiReplaySettings.java:43: error: 
+incompatible types: AbstractGuiElement cannot be converted to GuiToggleButton
+               final GuiToggleButton button = new GuiToggleButton().setSize(150, 20);
+                                                                           ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\core\versions\MCVer.java:198: error: cannot 
+find symbol
+      return FMLClientHandler.instance().hasOptifine();
+             ^
+  symbol:   variable FMLClientHandler
+  location: class MCVer
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\editor\gui\MarkerProcessor.java:47: error: 
+cannot find symbol
+         var3 = ((Set)inputReplayFile.getMarkers().or(HashSet::new)).stream().anyMatch(m -> m.getName() != null && 
+m.getName().startsWith("_RM_"));
+                                                                                             ^
+  symbol:   method getName()
+  location: variable m of type Object
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\editor\gui\MarkerProcessor.java:47: error: 
+cannot find symbol
+         var3 = ((Set)inputReplayFile.getMarkers().or(HashSet::new)).stream().anyMatch(m -> m.getName() != null && 
+m.getName().startsWith("_RM_"));
+                                                                                                                    ^
+  symbol:   method getName()
+  location: variable m of type Object
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\editor\gui\MarkerProcessor.java:76: error: 
+incompatible types: Object cannot be converted to List<Marker>
+         .collect(Collectors.toList());
+                 ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\editor\gui\MarkerProcessor.java:162: error: 
+incompatible types: Object cannot be converted to List<Marker>
+               .collect(Collectors.toList());
+                       ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:123: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+         .setValues(RenderSettings.RenderMethod.getSupported());
+                                                            ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:123: error: 
+incompatible types: AbstractGuiDropdownMenu cannot be converted to GuiDropdownMenu<RenderMethod>
+         .setValues(RenderSettings.RenderMethod.getSupported());
+                   ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:150: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+         .setValues(RenderSettings.EncodingPreset.getSupported());
+                                                              ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:150: error: 
+incompatible types: AbstractGuiDropdownMenu cannot be converted to GuiDropdownMenu<EncodingPreset>
+         .setValues(RenderSettings.EncodingPreset.getSupported());
+                   ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:173: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+      this.bitRateUnit = ((GuiDropdownMenu)new GuiDropdownMenu().setSize(50, 20)).setValues(new String[]{"bps", 
+"kbps", "mbps"}).setSelected("mbps");
+                                                                                            ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:173: error: 
+incompatible types: AbstractGuiDropdownMenu cannot be converted to GuiDropdownMenu<String>
+      this.bitRateUnit = ((GuiDropdownMenu)new GuiDropdownMenu().setSize(50, 20)).setValues(new String[]{"bps", 
+"kbps", "mbps"}).setSelected("mbps");
+                                                                                                                       
+                     ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:251: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+         .setValues(RenderSettings.AntiAliasing.values())
+                                                      ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\gui\GuiRenderSettings.java:252: error: 
+incompatible types: AbstractGuiDropdownMenu cannot be converted to GuiDropdownMenu<AntiAliasing>
+         .setSelected(RenderSettings.AntiAliasing.NONE);
+                     ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\RenderSettings.java:333: error: cannot 
+find symbol
+      return (R)("RenderSettings{renderMethod="
+              ^
+  symbol:   class R
+  location: class RenderSettings
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\extras\advancedscreenshots\ScreenshotWriter.java
+:50: error: cannot find symbol
+            ReplayMod.instance.runLater(() -> Utils.error(ReplayModExtras.LOGGER, 
+ReplayModReplay.instance.getReplayHandler().getOverlay(), report, null));
+                                                                                                                       
+                     ^
+  symbol:   variable report
+  location: class ScreenshotWriter
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\extras\youtube\GuiYoutubeUpload.java:115: 
+warning: non-varargs call of varargs method with inexact argument type for last parameter;
+         .setValues(VideoVisibility.values())
+                                          ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\extras\youtube\GuiYoutubeUpload.java:116: 
+error: incompatible types: AbstractGuiDropdownMenu cannot be converted to GuiDropdownMenu<VideoVisibility>
+         .setSelected(VideoVisibility.PUBLIC);
+                     ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\recording\handler\GuiHandler.java:64: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+                        new String[]{
+                        ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\recording\handler\GuiHandler.java:70: error: 
+incompatible types: AbstractGuiToggleButton cannot be converted to GuiToggleButton<String>
+                     .setSelected(state == null ? 0 : (state ? 2 : 1));
+                                 ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\blend\exporters\ChunkExporter.java:52: 
+error: incompatible types: Object cannot be converted to ContainerLocalRenderInformationAccessor
+      for (ContainerLocalRenderInformationAccessor renderInfo : 
+((WorldRendererAccessor)mc.renderGlobal).getRenderInfos()) {
+                                                                                                                       
+^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\blend\exporters\ChunkExporter.java:139: 
+error: renderEngine has private access in Minecraft
+      MCVer.getMinecraft().renderEngine.bindTexture(TextureMap.locationBlocksTexture);
+                          ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\blend\mixin\MixinModelRenderer.java:20: 
+error: incompatible types: MixinModelRenderer cannot be converted to ModelRenderer
+         blendState.get(ModelRendererExporter.class).preRenderModel((ModelRenderer)this, scale);
+                                                                                   ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\blend\mixin\MixinModelRenderer.java:31: 
+error: incompatible types: MixinModelRenderer cannot be converted to ModelRenderer
+         blendState.get(ModelRendererExporter.class).preRenderModel((ModelRenderer)this, scale);
+                                                                                   ^
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\hooks\EntityRendererHandler.java:53: 
+error: cannot find symbol
+      FMLCommonHandler.instance().onRenderTickStart(partialTicks);
+                                 ^
+  symbol:   method onRenderTickStart(float)
+  location: class FMLCommonHandler
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\hooks\EntityRendererHandler.java:76: 
+error: cannot find symbol
+      FMLCommonHandler.instance().onRenderTickEnd(partialTicks);
+                                 ^
+  symbol:   method onRenderTickEnd(float)
+  location: class FMLCommonHandler
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\render\utils\Lwjgl3Loader.java:31: warning: 
+non-varargs call of varargs method with inexact argument type for last parameter;
+      setMethod.invoke(configClass.getField("SHARED_LIBRARY_EXTRACT_PATH").get(null), null);
+                                                                                      ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\replay\gui\screen\GuiReplayViewer.java:393: 
+error: cannot find symbol
+            File[] files = this.folder.listFiles((FileFilter)new SuffixFileFilter(".mcpr", IOCase.INSENSITIVE));
+                                                  ^
+  symbol:   class FileFilter
+  location: class GuiReplayList
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\simplepathing\preview\PathPreviewRenderer.java:1
+32: error: cannot find symbol
+                           .forEachOrdered(p -> this.drawPoint(viewPos, (Vector3f)p.getRight(), 
+(Keyframe)p.getLeft()));
+                                                                                   ^
+  symbol:   method getRight()
+  location: variable p of type Object
+E:\MicroClient_NEW\ReplayMod_src\build\sources\main\java\com\replaymod\simplepathing\preview\PathPreviewRenderer.java:1
+32: error: cannot find symbol
+                           .forEachOrdered(p -> this.drawPoint(viewPos, (Vector3f)p.getRight(), 
+(Keyframe)p.getLeft()));
+                                                                                                           ^
+  symbol:   method getLeft()
+  location: variable p of type Object
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+26 errors
+7 warnings
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run 
+with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.9.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 5s
+6 actionable tasks: 4 executed, 2 up-to-date

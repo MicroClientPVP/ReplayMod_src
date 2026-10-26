@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+MixinConfigs: mixins.core.replaymod.json,mixins.recording.replaymod.js
+ on,mixins.replay.replaymod.json,mixins.render.replaymod.json,mixins.j
+ gui.json
+TweakClass: party.komas19.microclient.launch.ClientTweaker
+

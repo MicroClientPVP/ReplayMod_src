@@ -1,0 +1,90 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		maven { url 'https://files.minecraftforge.net/maven' }
+		maven { url 'https://repo.spongepowered.org/maven' }
+		maven { url 'https://jitpack.io' }
+	}
+	dependencies {
+		classpath 'com.github.gatooooooo:ForgeGradle:f2c5bb338e'
+		classpath 'com.github.xcfrg:MixinGradle:0.6-SNAPSHOT'
+	}
+}
+
+apply plugin: 'net.minecraftforge.gradle.tweaker-client'
+apply plugin: 'org.spongepowered.mixin'
+apply plugin: 'java'
+
+compileJava {
+	sourceCompatibility = targetCompatibility = 8
+	options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+version '1.8.9'
+group 'com.replaymod'
+
+minecraft {
+	version = '1.8.9'
+	tweakClass = 'party.komas19.microclient.launch.ClientTweaker'
+	mappings = 'stable_22'
+	runDir = 'run'
+	makeObfSourceJar = false
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://libraries.minecraft.net' }
+	maven { url 'https://repo.spongepowered.org/maven' }
+	maven { url 'https://jitpack.io' }
+}
+
+configurations {
+	tclmdk
+	compile.extendsFrom tclmdk
+	runtime.extendsFrom tclmdk
+}
+
+dependencies {
+	compile 'com.google.code.gson:gson:2.8.7'
+	compileOnly 'org.lwjgl:lwjgl:3.3.1'
+	compileOnly 'org.lwjgl:lwjgl-tinyexr:3.3.1'
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+
+	tclmdk('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
+		exclude module: 'launchwrapper'
+		exclude module: 'guava'
+		exclude module: 'gson'
+		exclude module: 'commons-io'
+	}
+	annotationProcessor 'org.spongepowered:mixin:0.7.11-SNAPSHOT'
+}
+
+processResources {
+	inputs.files 'src/main/resources'
+	outputs.dir 'build/classes/main'
+	copy {
+		from('src/main/resources')
+		into('build/classes/main')
+	}
+}
+
+mixin {
+	add sourceSets.main, "mixins.replaymod.refmap.json"
+}
+
+jar {
+	from(zipTree('libs/replaymod-libs.jar')) {
+		exclude 'META-INF/*.SF'
+		exclude 'META-INF/*.DSA'
+		exclude 'META-INF/*.RSA'
+		exclude 'META-INF/versions/**'
+	}
+	manifest.attributes(
+		'MixinConfigs': "mixins.core.replaymod.json,mixins.recording.replaymod.json,mixins.replay.replaymod.json,mixins.render.replaymod.json,mixins.jgui.json",
+		'Manifest-Version': 1.0
+	)
+}

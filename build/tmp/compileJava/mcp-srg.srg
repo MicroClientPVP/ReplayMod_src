@@ -1,0 +1,23 @@
+FD: com/replaymod/core/mixin/MixinMinecraft/systemTime com/replaymod/core/mixin/MixinMinecraft/field_71423_H
+FD: com/replaymod/core/mixin/Mixin_ContextualKeyBindings/keybindArray com/replaymod/core/mixin/Mixin_ContextualKeyBindings/field_74516_a
+FD: com/replaymod/lib/de/johni0702/minecraft/gui/versions/mixin/Mixin_PassEventsExt/allowUserInput com/replaymod/lib/de/johni0702/minecraft/gui/versions/mixin/Mixin_PassEventsExt/field_146291_p
+FD: com/replaymod/recording/mixin/MixinClientConnection/channel com/replaymod/recording/mixin/MixinClientConnection/field_150746_k
+FD: com/replaymod/recording/mixin/MixinNetHandlerLoginClient/networkManager com/replaymod/recording/mixin/MixinNetHandlerLoginClient/field_147393_d
+FD: com/replaymod/recording/mixin/MixinNetHandlerPlayClient/playerInfoMap com/replaymod/recording/mixin/MixinNetHandlerPlayClient/field_147310_i
+FD: com/replaymod/render/mixin/MixinGlStateManager/activeTextureUnit com/replaymod/render/mixin/MixinGlStateManager/field_179162_o
+FD: com/replaymod/render/mixin/MixinRenderManager/playerViewX com/replaymod/render/mixin/MixinRenderManager/field_78732_j
+FD: com/replaymod/render/mixin/MixinRenderManager/playerViewY com/replaymod/render/mixin/MixinRenderManager/field_78735_i
+FD: com/replaymod/render/mixin/Mixin_ChromaKeyColorSky/mc com/replaymod/render/mixin/Mixin_ChromaKeyColorSky/field_72777_q
+FD: com/replaymod/render/mixin/Mixin_ChromaKeyForceSky/mc com/replaymod/render/mixin/Mixin_ChromaKeyForceSky/field_78531_r
+FD: com/replaymod/render/mixin/Mixin_ForceChunkLoading/displayListEntitiesDirty com/replaymod/render/mixin/Mixin_ForceChunkLoading/field_147595_R
+FD: com/replaymod/render/mixin/Mixin_ForceChunkLoading/renderDispatcher com/replaymod/render/mixin/Mixin_ForceChunkLoading/field_174995_M
+FD: com/replaymod/render/mixin/Mixin_SkipBlockOutlinesDuringRender/mc com/replaymod/render/mixin/Mixin_SkipBlockOutlinesDuringRender/field_72777_q
+FD: com/replaymod/replay/mixin/entity_tracking/Mixin_EntityExt/rotationYaw com/replaymod/replay/mixin/entity_tracking/Mixin_EntityExt/field_70177_z
+FD: com/replaymod/replay/mixin/entity_tracking/Mixin_EntityExt/rotationPitch com/replaymod/replay/mixin/entity_tracking/Mixin_EntityExt/field_70125_A
+FD: com/replaymod/replay/mixin/MixinPlayerControllerMP/mc com/replaymod/replay/mixin/MixinPlayerControllerMP/field_78776_a
+FD: com/replaymod/replay/mixin/MixinRenderManager/playerViewY com/replaymod/replay/mixin/MixinRenderManager/field_78735_i
+FD: com/replaymod/replay/mixin/Mixin_CreateReplayCamera/mc com/replaymod/replay/mixin/Mixin_CreateReplayCamera/field_78776_a
+FD: com/replaymod/replay/mixin/Mixin_CreateReplayCamera/netClientHandler com/replaymod/replay/mixin/Mixin_CreateReplayCamera/field_78774_b
+MD: com/replaymod/render/mixin/MixinChunkRenderWorker/processTask (Lnet/minecraft/client/renderer/chunk/ChunkCompileTaskGenerator;)V com/replaymod/render/mixin/MixinChunkRenderWorker/func_178474_a (Lnet/minecraft/client/renderer/chunk/ChunkCompileTaskGenerator;)V
+MD: com/replaymod/render/mixin/Mixin_ForceChunkLoading/setupTerrain (Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V com/replaymod/render/mixin/Mixin_ForceChunkLoading/func_174970_a (Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V
+MD: com/replaymod/replay/mixin/Mixin_FixNPCSkinCaching/getPlayerInfo ()Lnet/minecraft/client/network/NetworkPlayerInfo; com/replaymod/replay/mixin/Mixin_FixNPCSkinCaching/func_175155_b ()Lnet/minecraft/client/network/NetworkPlayerInfo;
