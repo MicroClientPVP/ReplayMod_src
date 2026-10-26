@@ -1,0 +1,52 @@
+# Gradle
+.gradle/
+build/
+out/
+gradle-app.setting
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+compile_errors.txt
+hs_err_pid*
+
+# Package files (ignore generated jars, keep bundled compile-time libs & wrapper)
+*.jar
+*.war
+*.ear
+!libs/*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# IDE - Eclipse
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+
+# IDE - Visual Studio Code
+.vscode/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+.directory
+.Trash-*
+
+# Minecraft / Forge run directory
+run/
